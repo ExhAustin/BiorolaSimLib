@@ -44,7 +44,10 @@ Template files (incomplete codes that users can modify):
 
 Other Files
 	result_visualizer.m
+		Calls respective GUI functions to visualize simulation results.
+
 	functions\eventFcn_default.m
+		An empty event function as a default for systems without events.
 
 === Instruction Manual ===
 1. For each new system, make a copy of the entire \template folder
