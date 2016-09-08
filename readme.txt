@@ -14,15 +14,19 @@ Functionalities in the toolbox can also be explicitly used without following the
 
 === File List ===
 Toolbox files (packaged functions that perform complex tasks):
+
 	toolbox\downhillMinSearch.m
 		A downhill search algorithm that finds the local minimum of a function.
 		(Specific information is included in the comments in the file)
+
 	toolbox\lagrangian2eqns.m
 		Formulates the system state equations from the Lagrangian.
 		(Specific information is included in the comments in the file)
+
 	toolbox\plot_gui.m
 		A interactive GUI for visualizing simulation results.
 		(Generated video files will be placed in \videos)
+
 	toolbox\plot_gui_old.m
 		A interactive GUI for visualizing simulation results.
 		For R2014a and older.
@@ -30,19 +34,24 @@ Toolbox files (packaged functions that perform complex tasks):
 		(Generated video files will be placed in \videos)
 
 Template files (incomplete codes that users can modify):
+
 	equation_generation.m
 		Generates system equations and event functions.
 		(Generated files will be placed in \functions)
+
 	ode_simulation.m
 		Utilizes ode45 to simulate an ode system.
 		(Generated files will be placed in \results)
+
 	functions\drawFcn.m
 		Plot a drawing of the system configuration from generalized coordinates.
+
 	functions\ode_simulation_func.m
 		Function form of ode_simulation.m (for mass searching).
 		Returns simulation results as output instead of saving to file.
 
 Other Files
+
 	result_visualizer.m
 		Calls respective GUI functions to visualize simulation results.
 
