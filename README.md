@@ -1,7 +1,7 @@
 # Biorola Simulation Library/Template
 - Author: Austin Wang
 - Year: 2016
-- Requirements: MATLAB version R2013a or newer, Symbolic Math Toolbox (Note: R2014a or newer is preferred due to GUI issues)
+- Requirements: MATLAB version R2013a or newer, Symbolic Math Toolbox (Note: R2014b or newer is preferred due to GUI issues)
 
 ## Introduction
 - A template for deriving the state equations of a system and simulating it through time.
