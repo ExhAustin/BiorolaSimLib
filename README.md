@@ -10,7 +10,7 @@
 - Functionalities in the toolbox can also be explicitly used without following the templates.
 
 ## File List
-#### Toolbox files (packaged functions that perform complex tasks):
+### Toolbox files (packaged functions that perform complex tasks):
 **toolbox\downhillMinSearch.m**
 - A downhill search algorithm that finds the local minimum of a function.
 - (Specific information is included in the comments in the file)
@@ -29,7 +29,7 @@
 - (GUI is flawed, can only output to video file)
 - (Generated video files will be placed in \videos)
 
-#### Template files (incomplete codes that users can modify):
+### Template files (incomplete codes that users can modify):
 **equation_generation.m**
 - Generates system equations and event functions.
 - (Generated files will be placed in \functions)
@@ -45,7 +45,7 @@
 - Function form of ode_simulation.m (for mass searching).
 - Returns simulation results as output instead of saving to file.
 
-#### Other Files
+### Other Files
 
 **result_visualizer.m**
 - Calls respective GUI functions to visualize simulation results.
