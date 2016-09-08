@@ -1,16 +1,16 @@
 # Biorola Simulation Library/Template
 - Author: Austin Wang
 - Year: 2016
-- Requirements: MATLAB version R2013a or newer, Symbolic Math Toolbox * (Note: R2014a or newer is preferred due to GUI issues)
+- Requirements: MATLAB version R2013a or newer, Symbolic Math Toolbox (Note: R2014a or newer is preferred due to GUI issues)
 
-### Introduction
+## Introduction
 - A template for deriving the state equations of a system and simulating it through time.
 - In template files, areas enclosed in `%*** ... ***` should be filled in by the user.
 - Two examples are included in this package. (double pendulum and bouncing ball)
 - Functionalities in the toolbox can also be explicitly used without following the templates.
 
-### File List
-##### Toolbox files (packaged functions that perform complex tasks):
+## File List
+#### Toolbox files (packaged functions that perform complex tasks):
 **toolbox\downhillMinSearch.m**
 - A downhill search algorithm that finds the local minimum of a function.
 - (Specific information is included in the comments in the file)
@@ -29,7 +29,7 @@
 - (GUI is flawed, can only output to video file)
 - (Generated video files will be placed in \videos)
 
-##### Template files (incomplete codes that users can modify):
+#### Template files (incomplete codes that users can modify):
 **equation_generation.m**
 - Generates system equations and event functions.
 - (Generated files will be placed in \functions)
@@ -45,7 +45,7 @@
 - Function form of ode_simulation.m (for mass searching).
 - Returns simulation results as output instead of saving to file.
 
-##### Other Files
+#### Other Files
 
 **result_visualizer.m**
 - Calls respective GUI functions to visualize simulation results.
@@ -53,7 +53,7 @@
 **functions\eventFcn_default.m**
 - An empty event function as a default for systems without events.
 
-### Instruction Manual
+## Instruction Manual
 1. For each new system, make a copy of the entire **\template** folder
 2. Define system equations in **equation_generation.m**
 3. Setup simulation settings and initial conditions in **ode_simulation.m**
