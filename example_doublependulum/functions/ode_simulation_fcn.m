@@ -7,9 +7,9 @@ function result = ode_simulation_func(sim_time, x0);
 % Setup state equations & event function
 addpath('functions');
 
-odeFcn = @pendulum_sys; %***initial state equation function handle***
+odeFcn = %***initial state equation function handle***
 
-eventFcn = @eventFcn_default; %***initial event function handle (@eventFcn_default if no events needed)***
+eventFcn = %***initial event function handle (@eventFcn_default if no events needed)***
 options = odeset('Events', eventFcn);	% add additional ode45 options here if needed
 
 % Time
@@ -52,13 +52,6 @@ while 1
 	XE_result = [XE_result; XE(idx:end, :)];
 	IE_result = [IE_result; IE(idx:end)];
 
-
-	% Phase transition
-		%***change odeFcn (and eventFcn) here according to IE*** (leave blank if no transitions are required)
-
-	% Other
-		%***add additional custom settings here*** (ex: reset states, terminate simulation early)
-
 	% End loop if sim_time is reached, otherwise update starting time
 	if T(end) ~= sim_time
 		% Set new ode initial conditions
@@ -68,6 +61,12 @@ while 1
 		% Simulation complete!
 		break;
 	end
+
+	% Phase transition
+		%***change odeFcn (and eventFcn) here according to IE*** (leave blank if no transitions are required)
+
+	% Other
+		%***add additional custom settings here*** (ex: reset states, terminate simulation early)
 
 end
 
