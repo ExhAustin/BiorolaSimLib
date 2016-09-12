@@ -9,6 +9,15 @@
 - Two examples are included in this package. (double pendulum and bouncing ball)
 - Functionalities in the toolbox can also be explicitly used without following the templates.
 
+## Instruction Manual
+1. For each new system, make a copy of the entire **\template** folder
+2. Define system equations in **equation_generation.m**
+3. Setup simulation settings and initial conditions in **ode_simulation.m**
+4. Define a plot of system in **functions\drawFcn.m**
+5. Run **equationGeneration.m** to generate equation files
+6. Run **ode_simulation.m** to obtain simulation results
+7. Run **result_visualizer.m** to view/save simulation results
+
 ## File List
 ### Toolbox files (packaged functions that perform complex tasks):
 **toolbox\downhillMinSearch.m**
@@ -52,12 +61,3 @@
 
 **functions\eventFcn_default.m**
 - An empty event function as a default for systems without events.
-
-## Instruction Manual
-1. For each new system, make a copy of the entire **\template** folder
-2. Define system equations in **equation_generation.m**
-3. Setup simulation settings and initial conditions in **ode_simulation.m**
-4. Define a plot of system in functions **\drawFcn.m**
-5. Run **equationGeneration.m** to generate equation files
-6. Run **ode_simulation.m** to obtain simulation results
-7. Run **result_visualizer.m** to view/save simulation results
