@@ -169,9 +169,11 @@ function [n_dof, tau, constraints, n_constraints] = parseInput(t, q, q_dot, L, v
 			tau = zeros(n_dof, 1);
 		end
 	else
-		symvec_tau = symvar(tau);
-		if ~all( ismember(symvec_tau, [t; q; q_dot]) )
-			error('Error: The generalized force tau must be constructed by t and/or symbolic variables in q and q_dot.')
+		if strcmp(class(tau), 'sym')
+			symvec_tau = symvar(tau);
+			if ~all( ismember(symvec_tau, [t; q; q_dot]) )
+				error('Error: The generalized force tau must be constructed by t and/or symbolic variables in q and q_dot.')
+			end
 		end
 	end
 
