@@ -73,7 +73,7 @@ matlabFunction(f, 'file', pathname, 'vars', {t, x});
 n_events = 1; %***number of events the system might encounter at this phase***
 
 value = q(2) - r; %***value of event function (n_events-by-1 column vector of functions of q and/or q_dot)***
-isterminal = 1; %***if the integration should terminate at a zero of this event function (1:yes, 2:no) (n_events-by-1 column vector)***
+isterminal = 1; %***if the integration should terminate at a zero of this event function (1:yes, 0:no) (n_events-by-1 column vector)***
 direction = -1; %***direction of value at a zero (1: value is increasing, -1: value is decreasing, 0: both) (n_events-by-1 column vector)***
 
 % Save symbolic function as a Matlab function file
